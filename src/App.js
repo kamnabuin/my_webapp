@@ -1,4 +1,4 @@
-import create from "./create";
+import WeatherDashboard from "./WeatherDashboard";
 import Home from "./Home";
 import MovieDetails from "./MovieDetails";
 import Navbar from "./Navbar";
@@ -16,11 +16,11 @@ function App() {
         <Route exact path='/'>
       <Home/>
       </Route>
-      <Route path='/create'>
-      <create/>
+      <Route path='/WeatherDashboard'>
+      <WeatherDashboard/>
       </Route>
-      <Route path='/movies/:id'>
-      <MovieDetails  />
+      <Route path='/Watch/:id'>
+      <WeatherDashboard  />
       </Route>
       <Route path='*'>
       <NotFound  />
